@@ -5,36 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrayIconExperimenting"
         mc:Ignorable="d"
-        Title="Horthapotamus" Height="450" Width="800"
-        MinWidth="600" MinHeight="200"
+        Title="Horthapotamus" Height="400" Width="300"
+        ResizeMode="NoResize"
         Background="#121212" WindowStartupLocation="CenterScreen">
-  <Grid>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
-
+  <UniformGrid
+    Margin="40"
+    Columns="1">
+    
     <Button
-      Grid.Column="0"
-      Height="40"
-      Margin="40"
+      Height="60"
       Command="{Binding SetStatusOK}">
       SET STATUS OK
     </Button>
     <Button
-      Grid.Column="1"
-      Height="40"
-      Margin="40"
+      Height="60"
       Command="{Binding SetStatusWarning}">
       SET STATUS WARNING
     </Button>
     <Button
-      Grid.Column="2"
-      Height="40"
-      Margin="40"
+      Height="60"
       Command="{Binding SetStatusError}">
       SET STATUS ERROR
     </Button>
-  </Grid>
+  </UniformGrid>
 </Window>
