@@ -25,12 +25,22 @@ namespace TrayIconExperimenting
       mainWindow.Show();
 
       _notifyIcon.Click += NotifyIconClicked;
+      _notifyIcon.ContextMenuStrip = new();
+
+      var quitButton = new Forms.ToolStripButton("Quit");
+      quitButton.Click += OnQuitButtonClicked;
+      _notifyIcon.ContextMenuStrip.Items.Add(quitButton);
+    }
+
+    void OnQuitButtonClicked(object? sender, System.EventArgs e)
+    {
+      Current.Shutdown();
     }
 
     void NotifyIconClicked(object? sender, System.EventArgs e)
     {
       MainWindow.WindowState = WindowState.Normal;
-      MainWindow.Activate();
+      MainWindow.Show();
     }
 
     protected override void OnExit(ExitEventArgs e)
