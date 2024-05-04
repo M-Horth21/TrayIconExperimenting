@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace NetworkMegaConfigurator.ViewModels
+namespace TrayIconExperimenting.ViewModels
 {
   public class BaseViewModel : INotifyPropertyChanged
   {

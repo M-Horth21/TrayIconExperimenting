@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace HandbrakeAutomatorMVVM.Commands
+namespace TrayIconExperimenting.Commands
 {
   internal class RelayCommand : ICommand
   {

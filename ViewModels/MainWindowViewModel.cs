@@ -1,7 +1,6 @@
-﻿using HandbrakeAutomatorMVVM.Commands;
-using NetworkMegaConfigurator.ViewModels;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Input;
+using TrayIconExperimenting.Commands;
 using Forms = System.Windows.Forms;
 
 namespace TrayIconExperimenting.ViewModels
