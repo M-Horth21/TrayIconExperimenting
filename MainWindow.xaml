@@ -1,0 +1,40 @@
+﻿<Window x:Class="TrayIconExperimenting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrayIconExperimenting"
+        mc:Ignorable="d"
+        Title="Horthapotamus" Height="450" Width="800"
+        MinWidth="600" MinHeight="200"
+        Background="#121212" WindowStartupLocation="CenterScreen">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Button
+      Grid.Column="0"
+      Height="40"
+      Margin="40"
+      Command="{Binding SetStatusOK}">
+      SET STATUS OK
+    </Button>
+    <Button
+      Grid.Column="1"
+      Height="40"
+      Margin="40"
+      Command="{Binding SetStatusWarning}">
+      SET STATUS WARNING
+    </Button>
+    <Button
+      Grid.Column="2"
+      Height="40"
+      Margin="40"
+      Command="{Binding SetStatusError}">
+      SET STATUS ERROR
+    </Button>
+  </Grid>
+</Window>
